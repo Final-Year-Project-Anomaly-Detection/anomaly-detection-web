@@ -30,7 +30,8 @@ export default function Signup() {
   };
 
   //handle Signup API Integration here
-  const createAccount = () => {
+  const createAccount = (e) => {
+    e.preventDefault();
     signInWithPopup(auth, provider)
       .then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
