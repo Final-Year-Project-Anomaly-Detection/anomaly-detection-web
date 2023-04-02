@@ -60,7 +60,7 @@ export default function Signup() {
 
   return (
     <>
-      <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+      <form className="mt-8 space-y-6" >
         <div className="w-full flex justify-center items-center">
           {toggle && (
             <img
